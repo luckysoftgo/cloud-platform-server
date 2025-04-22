@@ -1,0 +1,9 @@
+com.application.cloud.common.security.service.CloudDefaultUserDetailsServiceImpl
+com.application.cloud.common.security.service.CloudTocDefaultUserDetailsServiceImpl
+com.application.cloud.common.security.service.CloudMobileUserDetailServiceImpl
+com.application.cloud.common.security.service.CloudTocMobileUserDetailsServiceImpl
+com.application.cloud.common.security.service.CloudRedisOAuth2AuthorizationService
+com.application.cloud.common.security.service.CloudRedisOAuth2AuthorizationConsentService
+com.application.cloud.common.security.component.CloudSecurityInnerAspect
+com.application.cloud.common.security.component.CloudSecurityMessageSourceConfiguration
+com.application.cloud.common.security.service.CloudRemoteRegisteredClientRepository

@@ -1,0 +1,2 @@
+com.application.cloud.common.feign.CloudFeignAutoConfiguration=\
+  com.application.cloud.app.api.feign.RemoteAppUserService

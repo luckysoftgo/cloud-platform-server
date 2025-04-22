@@ -1,0 +1,9 @@
+com.application.cloud.common.data.cache.RedisTemplateConfiguration
+com.application.cloud.common.data.cache.RedisMessageConfiguration
+com.application.cloud.common.data.cache.RedisCacheManagerConfiguration
+com.application.cloud.common.data.cache.RedisCacheAutoConfiguration
+com.application.cloud.common.data.tenant.CloudTenantConfigProperties
+com.application.cloud.common.data.tenant.TenantContextHolderFilter
+com.application.cloud.common.data.tenant.CloudTenantConfiguration
+com.application.cloud.common.data.mybatis.MybatisPlusConfiguration
+com.application.cloud.common.data.resolver.TenantKeyStrResolver

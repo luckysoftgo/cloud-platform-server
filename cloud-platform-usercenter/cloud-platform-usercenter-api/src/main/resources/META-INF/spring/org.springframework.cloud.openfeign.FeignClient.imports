@@ -1,0 +1,15 @@
+com.application.cloud.admin.api.feign.RemoteDataScopeService
+com.application.cloud.admin.api.feign.RemoteClientDetailsService
+com.application.cloud.admin.api.feign.RemoteLogService
+com.application.cloud.admin.api.feign.RemoteParamService
+com.application.cloud.admin.api.feign.RemoteFileService
+com.application.cloud.admin.api.feign.RemoteTenantService
+com.application.cloud.admin.api.feign.RemoteTokenService
+com.application.cloud.admin.api.feign.RemoteUserService
+com.application.cloud.admin.api.feign.RemoteRoleService
+com.application.cloud.admin.api.feign.RemoteDeptService
+com.application.cloud.admin.api.feign.RemoteDictService
+com.application.cloud.admin.api.feign.RemoteAuditLogService
+com.application.cloud.admin.api.feign.RemoteMenuService
+com.application.cloud.admin.api.feign.RemoteRouteConfService
+com.application.cloud.admin.api.feign.RemoteMessageService

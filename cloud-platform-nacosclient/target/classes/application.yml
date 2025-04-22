@@ -1,0 +1,74 @@
+#### 以下是 nacos 相关配置 ####
+server:
+  tomcat:
+    basedir: /mnt/applogs/nacos/
+    accesslog:
+      enabled: false
+  error:
+    include-message: always
+db:
+  num: 1
+  user: ${MYSQL_USER:root}
+  password: ${MYSQL_PWD:mysql123}
+  url:
+    0: jdbc:mysql://${MYSQL_HOST:cloud-platform-mysql}:${MYSQL_PORT:3306}/${MYSQL_DB:cloud_platform_config}?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8&nullCatalogMeansCurrent=true&allowPublicKeyRetrieval=true
+  pool:
+    config:
+      connectionTimeout: 30000
+      validationTimeout: 10000
+
+#### 以下是 nacos 相关配置 ####
+nacos:
+  core:
+    auth:
+      server:
+        identity:
+          key: serverIdentity
+          value: security
+      system.type: nacos
+      plugin.nacos.token.secret.key: SecretKey012345678901234567890123456789012345678901234567890123456789
+  security:
+    ignore:
+      urls: /actuator/**,/,/error,/**/*.css,/**/*.js,/**/*.html,/**/*.map,/**/*.svg,/**/*.png,/**/*.ico,/console-fe/public/**,/v1/auth/**,/v1/console/health/**,/actuator/**,/v1/console/server/**
+
+
+#### 以下是 spring cloud 相关配置 ####
+spring:
+  datasource:
+    platform: mysql  #这个过期属性不能修改，nacos 代码对此有硬编码
+  security:
+    enabled: true    #开启安全认证
+  application:
+    name: cloud-platform-nacosclient  #项目名称
+  boot: # 接入 spring boot admin
+    admin:
+      client:
+        url: http://cloud-platform-monitor:5001
+        username: pig
+        password: pig
+        instance:
+          service-host-type: ip
+    
+#### 以下是其他配置 ####
+useAddressServer: true
+
+## 暴露所有端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  metrics:
+    export:
+      influx:
+        enabled: false
+      elastic:
+        enabled: false
+
+##日志输出
+logging:
+  config: classpath:nacos-logback.xml
+  level:
+    com:
+      alibaba:
+        nacos: warn

@@ -1,0 +1,2 @@
+com.application.cloud.common.sentinel.CloudSentinelAutoConfiguration
+com.application.cloud.common.sentinel.handle.GlobalBizExceptionHandler

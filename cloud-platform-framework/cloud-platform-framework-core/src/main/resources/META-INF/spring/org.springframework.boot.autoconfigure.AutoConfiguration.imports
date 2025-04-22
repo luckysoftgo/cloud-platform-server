@@ -1,0 +1,7 @@
+com.application.cloud.common.core.config.AsyncConfiguration
+com.application.cloud.common.core.config.JacksonConfiguration
+com.application.cloud.common.core.config.MessageSourceConfiguration
+com.application.cloud.common.core.config.RestTemplateConfiguration
+com.application.cloud.common.core.config.ImmutableConfiguration
+com.application.cloud.common.core.util.SpringContextHolder
+

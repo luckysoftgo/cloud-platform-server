@@ -1,0 +1,3 @@
+com.application.cloud.common.websocket.config.WebSocketAutoConfiguration
+com.application.cloud.common.websocket.config.RedisMessageDistributorConfiguration
+com.application.cloud.common.websocket.config.LocalMessageDistributorConfiguration

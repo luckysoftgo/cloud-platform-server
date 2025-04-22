@@ -1,0 +1,14 @@
+启动顺序：
+1.cloud-platform-nacosclient
+2.cloud-platform-usercenter
+3.cloud-platform-authclient
+4.cloud-platform-gateway
+5.其他的顺序启动就好
+
+
+
+
+
+
+
+
