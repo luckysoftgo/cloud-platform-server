@@ -1,0 +1,18 @@
+server:
+  port: 9030
+
+spring:
+  application:
+    name: cloud-platform-workflow-task-biz
+  cloud:
+    nacos:
+      username: nacos
+      password: nacos
+      discovery:
+        server-addr: ${NACOS_HOST:cloud-register}:${NACOS_PORT:8848}
+      config:
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+  config:
+    import:
+      - optional:nacos:application-dev.yml
+      - optional:nacos:${spring.application.name}-dev.yml

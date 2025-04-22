@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.application.cloud</groupId>
+        <artifactId>cloud-platform-workflow</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>cloud-platform-workflow-engine</artifactId>
+    <packaging>pom</packaging>
+    <description>flowable 工作流核心引擎</description>
+
+    <!--项目子模块-->
+    <modules>
+        <module>cloud-platform-workflow-engine-api</module>
+        <module>cloud-platform-workflow-engine-biz</module>
+    </modules>
+</project>

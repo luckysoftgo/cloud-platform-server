@@ -1,0 +1,3 @@
+com.application.cloud.flow.task.api.feign.RemoteFlowTaskService
+com.application.cloud.flow.task.api.feign.RemoteFlowEngineService
+com.application.cloud.flow.task.api.feign.RemoteFlowApiFlowService
