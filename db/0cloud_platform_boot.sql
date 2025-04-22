@@ -1,7 +1,7 @@
 -- xmd 单体模式的数据库【可选】
-create database `xmdx_boot` default character set utf8mb4 collate utf8mb4_general_ci;
+create database `cloud_boot` default character set utf8mb4 collate utf8mb4_general_ci;
 
-use xmdx_boot;
+use cloud_boot;
 
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
