@@ -119,7 +119,7 @@
         <module>cloud-platform-workflow</module>
         <module>cloud-platform-integration</module>
         <module>cloud-app-client-server</module>
-        <!--单机启动模块-->
+        <!--单机启动模块,实际是springboot的单机版-->
         <module>cloud-platform-singleboot</module>
 
     </modules>
